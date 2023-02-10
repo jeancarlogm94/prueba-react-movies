@@ -26,7 +26,7 @@ function Header() {
       </div>
       <div className="video col">
         <Button className="btn-video" onClick={handleShow}>
-          <i class="fa-solid fa-3x fa-play"></i>
+          <i className="fa-solid fa-3x fa-play"></i>
         </Button>
         <div className="modal-container">
           <Modal show={show} onHide={handleClose}>
