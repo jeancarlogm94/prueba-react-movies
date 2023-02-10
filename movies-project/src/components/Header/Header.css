@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 50px 30px;
+}
+
+.call-to-action h1 {
+    color: #FFFFFF;
+}
+
+.call-to-action p {
+    color: #B1B2B8;
+    font-size: 18px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-watch {
+    color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 16px 38px;
+    font-size: 13px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: #00BDF0;
+    cursor: pointer;
+    transition: border 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.btn-watch:hover {
+    border: 2px solid #242B3A;
+    background-color: #30e0ff;
+    color: #242B3A;
+}
+
+.btn-play {
+    color: #B1B2B8;
+    border-radius: 5px;
+    border: 2px solid #B1B2B8;
+    padding: 16px 38px;
+    font-size: 13px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: #242B3A;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.btn-play:hover {
+    background-color: #00BDF0;
+    border: 2px solid #00BDF0;
+    color: #242B3A;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-video {
+    border-radius: 50%;
+    padding: 35px 38px 35px 45px;
+    background-color: #242B3A;
+    border: 2px solid #B1B2B8;
+}
+
+.btn-video:hover {
+    background-color: #00BDF0;
+    border: 2px solid #00BDF0;
+}
+
+.modal-container {
+    background-color: #242B3A;
+}
+
