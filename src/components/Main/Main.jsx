@@ -18,20 +18,26 @@ import img16 from '../../assets/movies/img-16.jpg';
 import img17 from '../../assets/movies/img-17.png';
 import img18 from '../../assets/movies/img-18.jpg';
 import './Main.css';
+import Carousel from 'react-bootstrap/Carousel';
 
 function Main() {
   const movieList1 = [img1, img2, img3, img4, img5, img6];
-  const movieList2 = [img13, img14, img15, img16, img17];
+  const movieList2 = [img12, img13, img14, img15, img16, img17];
 
   return (
     <div className="main">
+      <div className="title-categories container">
+        <p>Today</p> / <p>This Week</p> / <p>Last 30 days</p>
+      </div>
       <div className="main-container container">
-        <div className="movies container">
-          <div>
-            {movieList1.map((img) => (
+        <div className="movies-container">
+          {movieList1.map((img) => (
+            <div className="movies">
               <img src={img} alt="movies" />
-            ))}
-          </div>
+              <p className="category-movie">Action, 2016</p>
+              <p className="name-movie">Marvel Studios Movies</p>
+            </div>
+          ))}
         </div>
 
         <div className="movies-category">
@@ -52,6 +58,9 @@ function Main() {
       </div>
 
       <div className="main-2">
+        <div className="title-categories container">
+          <p>Today</p> / <p>This Week</p> / <p>Last 30 days</p>
+        </div>
         <div className="main-container container">
           <div className="movies-category">
             <div className="line-superior"></div>
@@ -68,10 +77,14 @@ function Main() {
               <p>VIEW ALL {'>'}</p>
             </div>
           </div>
-          <div className="movies container">
-            <div>
+          <div className="main-container container">
+            <div className="movies-container">
               {movieList2.map((img) => (
-                <img src={img} alt="" />
+                <div className="movies">
+                  <img src={img} alt="movies" />
+                  <p className="category-movie">Action, 2016</p>
+                  <p className="name-movie">Marvel Studios Movies</p>
+                </div>
               ))}
             </div>
           </div>

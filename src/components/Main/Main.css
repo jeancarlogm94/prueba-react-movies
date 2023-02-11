@@ -1,10 +1,26 @@
 .main {
   background-color: #101722;
+  padding-top: 50px;
+}
+
+.title-categories {
+  display: flex;
+  gap: 20px;
+}
+
+.title-categories p {
+  color: #727b82;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.title-categories p:hover {
+  color: #23b0e3;
 }
 
 .main-container {
   display: flex;
-  padding: 50px 0;
+  gap: 15px;
   width: 100%;
 }
 
@@ -18,6 +34,11 @@
   color: #ffffff;
 }
 
+.movies-container {
+  display: flex;
+  gap: 15px;
+}
+
 .movies {
   width: 100%;
 }
@@ -25,7 +46,21 @@
 .movies img {
   width: 164px;
   max-height: 240px;
-  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.movies img:hover {
+  transform: scale(1.1);
+}
+
+.category-movie {
+  color: #727b82;
+  margin-bottom: 0;
+}
+
+.name-movie {
+  color: #ffffff;
 }
 
 .arrow-btns {
@@ -63,4 +98,13 @@
 
 .main-2 {
   background-color: #0e131d;
+  padding-top: 50px;
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+  }
 }
