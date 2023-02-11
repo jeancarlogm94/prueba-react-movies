@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import video from '../../assets/video-banner.mp4';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import imageVideo from '../../assets/newBanner.jpg';
 import './Header.css';
 
 function Header() {
