@@ -107,12 +107,12 @@ function Main() {
                   <button className="arrow-circle">
                     <i className="fa-solid fa-chevron-left"></i>
                   </button>
-                  <button onClick={() => RightArrow} className="arrow-circle">
+                  <button className="arrow-circle">
                     <i className="fa-solid fa-chevron-right"></i>
                   </button>
                 </div>
                 <div className="view-all">
-                  <p>VIEW ALL {'>'}</p>
+                  d<p>VIEW ALL {'>'}</p>
                 </div>
               </div>
               <div className=" container"></div>
