@@ -112,7 +112,7 @@ function Main() {
                   </button>
                 </div>
                 <div className="view-all">
-                  d<p>VIEW ALL {'>'}</p>
+                  <p>VIEW ALL {'>'}</p>
                 </div>
               </div>
               <div className=" container"></div>
