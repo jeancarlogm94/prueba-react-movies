@@ -61,7 +61,7 @@ function Main() {
             className="owl-carousel owl-theme skill-slider col-10 mx-auto"
           >
             {movieList1.map((img) => (
-              <div>
+              <div key={img}>
                 <img src={img} alt="movies" />
                 <p className="category-movie">Action, 2016</p>
                 <p className="name-movie">Marvel Studios Movies</p>
@@ -124,7 +124,7 @@ function Main() {
               className="owl-carousel owl-theme skill-slider container col-10 mx-auto"
             >
               {movieList2.map((img) => (
-                <div>
+                <div key={img}>
                   <img src={img} alt="movies" />
                   <p className="category-movie">Action, 2016</p>
                   <p className="name-movie">Marvel Studios Movies</p>
