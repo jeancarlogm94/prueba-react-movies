@@ -19,20 +19,28 @@ function CarouselSection1({ carouselRef }) {
             breakpoint: { max: 4000, min: 3000 },
             items: 8,
         },
-        desktop: {
-            breakpoint: { max: 3000, min: 1200 },
+        largeDesktop: {
+            breakpoint: { max: 3000, min: 1400 },
+            items: 6,
+        },
+        mediumDesktop: {
+            breakpoint: { max: 1400, min: 1200 },
             items: 5,
         },
+        smallDesktop: {
+            breakpoint: { max: 1200, min: 1000 },
+            items: 4,
+        },
         tablet: {
-            breakpoint: { max: 1200, min: 800 },
+            breakpoint: { max: 1000, min: 780 },
             items: 3,
         },
         phablet: {
-            breakpoint: { max: 800, min: 400 },
+            breakpoint: { max: 780, min: 450 },
             items: 2,
         },
         mobile: {
-            breakpoint: { max: 400, min: 0 },
+            breakpoint: { max: 450, min: 0 },
             items: 1,
         },
     };
@@ -49,7 +57,7 @@ function CarouselSection1({ carouselRef }) {
                     <div key={img}>
                         <img src={img} alt="movies" />
                         <p className="category-movie">Action, 2016</p>
-                        <p className="name-movie">Marvel Studios Movies</p>
+                        <p className="name-movie">Marvel Studios</p>
                     </div>
                 ))}
             </Carousel>

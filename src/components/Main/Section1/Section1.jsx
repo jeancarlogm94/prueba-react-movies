@@ -8,7 +8,6 @@ function Section1() {
 
     const clickNext = () => {
         carouselRef.current.next();
-        d;
     };
 
     const clickPrev = () => {

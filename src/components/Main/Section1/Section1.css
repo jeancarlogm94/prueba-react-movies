@@ -28,11 +28,6 @@
     color: #ffffff;
 }
 
-.movies {
-    width: 100%;
-}
-
-.movies img,
 .owl-carousel img {
     width: 164px;
     max-height: 240px;
@@ -40,7 +35,6 @@
     transition: transform 0.3s;
 }
 
-.movies img:hover,
 .owl-carousel img:hover {
     transform: scale(1.1);
 }
@@ -90,7 +84,6 @@
 @media (max-width: 540px) {
     .section1-container {
         display: grid;
-        gap: 15px;
         width: 100%;
     }
 }
