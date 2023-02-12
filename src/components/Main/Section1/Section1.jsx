@@ -1,9 +1,20 @@
 import './Section1.css';
-import React from 'react';
+import React, { useRef } from 'react';
 import CarouselSection1 from './CarouselSection1';
 import Section2 from '../Section2/Section2';
 
 function Section1() {
+    const carouselRef = useRef(null);
+
+    const clickNext = () => {
+        carouselRef.current.next();
+        d;
+    };
+
+    const clickPrev = () => {
+        carouselRef.current.previous();
+    };
+
     return (
         <div className="section1">
             <div className="title-categories container">
@@ -12,7 +23,7 @@ function Section1() {
 
             <div className="container">
                 <div className="row">
-                    <CarouselSection1 />
+                    <CarouselSection1 carouselRef={carouselRef} />
                     <div className="section1-container container col">
                         <div className="movies-category">
                             <div className="line-superior"></div>
@@ -21,10 +32,16 @@ function Section1() {
                                 Action & Drama Movies
                             </h3>
                             <div className="arrow-btns container">
-                                <button className="arrow-circle">
+                                <button
+                                    onClick={clickPrev}
+                                    className="arrow-circle"
+                                >
                                     <i className="fa-solid fa-chevron-left"></i>
                                 </button>
-                                <button className="arrow-circle">
+                                <button
+                                    onClick={clickNext}
+                                    className="arrow-circle"
+                                >
                                     <i className="fa-solid fa-chevron-right"></i>
                                 </button>
                             </div>

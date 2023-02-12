@@ -11,7 +11,7 @@ import img10 from '../../../assets/movies/img-10.jpg';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-function CarouselSection1() {
+function CarouselSection1({ carouselRef }) {
     const movieList1 = [img1, img2, img3, img4, img5, img6, img8, img9, img10];
 
     const responsive = {
@@ -43,6 +43,7 @@ function CarouselSection1() {
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider "
+                ref={carouselRef}
             >
                 {movieList1.map((img) => (
                     <div key={img}>
