@@ -61,6 +61,7 @@ function CarouselSection1({ carouselRef }) {
                     </div>
                 ))}
             </Carousel>
+            {/* <img src={movieList2[0]} alt="" /> */}
         </div>
     );
 }
